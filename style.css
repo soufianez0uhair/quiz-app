@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;1,600&display=swap');
+
+:root {
+    --color-blue: #293264;
+    --color-purple: #4D5B9E;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family:  'Karla', sans-serif;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background: #F5F7FB;
+    display: flex;
+    padding: 0 10rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-blue)
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-blue)
+}
+
+.initial-phase {
+    text-align: center;
+}
+
+.initial-phase h1 {
+    font-size: 4.3rem;
+    font-weight: 700;
+}
+
+.initial-phase p {
+    font-size: 1.8rem;
+    margin: 2rem 0;
+}
+
+.initial-phase__btn {
+    font-size: 1.6rem;
+    outline: 0;
+    border: 0;
+    background:  var(--color-purple);
+    color: #fff;
+    width: 80%;
+    display: inline-block;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    animation: moveInBottom .75s ease;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(10rem)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.game {
+    display: none;
+}
+
+.quiz {
+    margin: 4rem 0;
+}
+
+.question {
+    font-size: 2.2rem;
+}
+
+.answers {
+    padding: 3rem 0;
+    border-bottom: 0.79px solid #DBDEF0;
+}
+
+.answer {
+    font-size: 1.7rem;
+    padding: .3rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: .1rem solid var(--color-purple);
+    display: inline-block;
+    margin: .75rem 0;
+    margin-right: 1rem;
+}
+
+.answer:hover {
+    background: var(--color-purple);
+    color: #fff;
+}
+
+.score-banner {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+button {
+    outline: 0;
+    border: 0;
+    background: var(--color-purple);
+    padding: 1.5rem 3rem;
+    color: #fff;
+    border-radius: 1rem;
+}
+
+.selected {
+    background: var(--color-purple);
+    color: #fff;
+}
+
+footer {
+    font-size: 1.7rem;
+    text-align: center;
+    height: 5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-github {
+    font-size: 2rem;
+    margin-left: 1rem;
+    transition: all .2s ease;
+}
+
+.fa-github:hover {
+    transform: rotate(60deg);
+    font-size: 2.5rem;
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 535px) {
+    body {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 400px){
+    html {
+        font-size: 50%;
+    }
+}
